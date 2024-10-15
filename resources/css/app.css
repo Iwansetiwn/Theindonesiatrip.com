@@ -1,0 +1,90 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Remove any conflicting header styles */
+
+/* Logo */
+.logo img {
+    height: 40px;
+}
+
+/* Navigation */
+nav a {
+    color: #4a5568;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    color: #1a202c;
+}
+
+/* Icons */
+.icons a {
+    color: #4a5568;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.icons a:hover {
+    color: #1a202c;
+}
+
+/* Cart badge */
+.cart-badge {
+    background-color: #e53e3e;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-button,
+    .mobile-menu {
+        display: none;
+    }
+}
